@@ -1,62 +1,90 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+title: "The Journey to MardisTech: From Data Loss to Unraid Success"
+description: "How a data disaster led to discovering Unraid and building a reliable homelab"
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{SITE_TITLE} | About</title>
+    <meta name="description" content="{SITE_DESCRIPTION}" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Journey to MardisTech: From Data Loss to Unraid Success</h1>
+      <p>A personal story of overcoming data disaster, discovering Unraid, and building a resilient homelab that changed everything.</p>
+    </header>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+    <main>
+      <section class="about-content">
+        <h2>It All Started With a Disaster</h2>
+        <p>
+          It was the kind of moment you never forget. I had spent weeks setting up a custom **Windows Storage Spaces** array, convinced that this would be the most **reliable** and **secure** way to store my data. After all, it promised redundancy and fault tolerance, right?
+        </p>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+        <p>
+          But then, disaster struck. A single disk failure led to a chain reaction, and before I knew it, **all of my data** was gone. My **important documents**, **family photos**, and **projects**—everything—was wiped out. The feeling of helplessness and devastation was palpable. It was more than just a hard drive failure; it felt like the loss of **memories** and hours of hard work that could never be recovered.
+        </p>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+        <h2>Searching for a Solution</h2>
+        <p>
+          I was determined to never face such a loss again. I began my search for **data protection** solutions that could give me peace of mind. That’s when I stumbled upon **Unraid**. I had heard whispers about it before, but it wasn’t until this catastrophe that I really understood its potential. 
+        </p>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+        <p>
+          Unraid wasn’t just another RAID system that required matching hard drives or locked me into complicated configurations. It was a **flexible**, **scalable**, and **user-friendly** system that promised a new way to think about data storage. I knew instantly that this was the solution I had been looking for. 
+        </p>
+
+        <h2>Building My Homelab with Unraid</h2>
+        <p>
+          With Unraid in hand, I set out to build my **homelab** from the ground up. It started small—a few drives, an old PC I had lying around, and a few hours spent reading the documentation. But as I added more drives, set up **Docker containers**, and customized the system to my needs, my homelab started to grow.
+        </p>
+
+        <p>
+          The beauty of Unraid lies in its flexibility. I could add any size drive, mix old and new hardware, and still have a system that would **never** lose my data. I also set up **parity disks**, ensuring that if a drive ever failed, my data would be safe. I didn’t have to worry about the **single point of failure** that caused my previous disaster.
+        </p>
+
+        <h2>From Data Loss to Empowerment</h2>
+        <p>
+          With Unraid, I no longer felt like a victim of technology—I felt like a **master** of it. My homelab became more than just a storage system. It became a playground for my passion: **automation**, **security**, and **efficiency**. I could experiment with **Docker**, set up **virtual machines**, automate tasks, and optimize my system with ease.
+        </p>
+
+        <p>
+          What started as a recovery mission turned into a **new beginning**. I found myself delving deeper into self-hosting and **smart home automation**, building systems that **worked for me**, not the other way around. My tech skills grew as I tackled new challenges, from setting up **home security cameras** to learning about **networking** and even **cloud services**.
+        </p>
+
+        <h2>Why MardisTech Exists</h2>
+        <p>
+          I created **MardisTech** to share my experiences and the knowledge I gained from my **data disaster** to **Unraid success**. It’s not just about homelabs or tech setups—it’s about **taking control** of your own digital world. Whether you're just starting or have years of experience, I want to help others avoid the mistakes I made and empower them to build **reliable, self-sustaining systems**.
+        </p>
+
+        <p>
+          On this blog, I’ll share:
+        </p>
+        <ul>
+          <li>**Homelab setups**: Building with Unraid, Docker, and virtualization</li>
+          <li>**Self-hosting**: Running services like Nextcloud, Plex, and even personal websites</li>
+          <li>**Tech tips**: From networking basics to advanced automation</li>
+          <li>**Smart home**: Turning my house into a truly connected space</li>
+        </ul>
+
+        <h2>The Journey Continues</h2>
+        <p>
+          This blog is just the beginning. I’m constantly learning, building, and experimenting with new ideas, and I want to take you along on this journey. My goal is to create a place where tech enthusiasts, DIYers, and **self-hosters** can come together to learn, share, and grow. 
+        </p>
+
+        <p>
+          So, stick around. This blog is my story, but it’s also **yours**—let’s learn from each other and make sure **data loss** is something we leave behind for good.
+        </p>
+
+        <a href="/blog/my-first-post" class="cta-button">Read My First Post</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} MardisTech. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
