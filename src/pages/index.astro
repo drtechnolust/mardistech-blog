@@ -1,50 +1,59 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+title: "MardisTech Blog"
+description: "A personal journey in tech, homelab, Unraid, and more."
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{SITE_TITLE}</title>
+    <meta name="description" content="{SITE_DESCRIPTION}" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1>Welcome to MardisTech Blog!</h1>
+          <p>
+            Join me as I share my journey in tech, homelab adventures, and tips
+            for building a smarter, more secure digital life.
+          </p>
+          <a href="/blog/my-first-post" class="cta-button">Read My Story</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="latest-posts">
+        <h2>Latest Posts</h2>
+        <div class="posts-list">
+          <article>
+            <a href="/blog/my-first-post">
+              <h3>How Losing My Files Led Me to Unraid – A Decade-Long Journey</h3>
+              <p>Discover how a lost data nightmare turned into the best decision of my tech career with Unraid.</p>
+            </a>
+          </article>
+          <!-- Dynamically load other posts here in the future -->
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>About MardisTech</h2>
+        <p>
+          MardisTech is my personal blog where I explore topics like homelabs,
+          data security, smart homes, and DIY tech projects. From building
+          Unraid servers to automating my house, it's all about taking control
+          and mastering the tech around us.
+        </p>
+        <a href="/about" class="cta-button">Learn More</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} MardisTech. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
